@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/frame_0_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_1_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_2_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_3_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_4_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_5_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_6_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_7_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_8_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_9_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_10_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_11_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_12_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_13_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_14_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_15_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_16_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_17_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_18_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_19_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_20_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_21_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_22_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_23_delay" android:duration="50" />
+    <item android:drawable="@drawable/frame_24_delay" android:duration="50" />
+</animation-list>
