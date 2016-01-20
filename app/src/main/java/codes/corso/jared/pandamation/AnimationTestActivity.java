@@ -1,14 +1,11 @@
 package codes.corso.jared.pandamation;
 
-import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import butterknife.Bind;
-import butterknife.OnClick;
 
 public class AnimationTestActivity extends AppCompatActivity {
 
@@ -24,7 +21,7 @@ public class AnimationTestActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Pandamate.animateRawManually(R.drawable.testanim,testImage, null, null);
+                Pandamate.animateManuallyWithStopFrame(R.drawable.testanim, testImage, null, null,10);
             }
         });
 
