@@ -13,6 +13,11 @@ allows you to use it for intermediary values.  The goal was to use the same anim
 Build.Gradle
 
 - Add Maven
+- ```
+- maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots"
+        }
+```
 
 - Add the project
 ```
