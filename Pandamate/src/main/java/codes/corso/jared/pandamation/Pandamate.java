@@ -52,7 +52,7 @@ public class Pandamate {
                                 int duration = 1000;
 
                                 for (int i=0; i<parser.getAttributeCount(); i++) {
-                                    if (parser.getAttributeName(i).equals("drawable")) {
+                                    if (parser.getAttributeName(i).equals("drawable") || parser.getAttributeName(i).equals("android:drawable")) {
                                         int resId = Integer.parseInt(parser.getAttributeValue(i).substring(1));
                                         bytes = IOUtils.toByteArray(context.getResources().openRawResource(resId));
                                     }
