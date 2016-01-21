@@ -21,7 +21,7 @@ Build.Gradle
 
 - Add the project
 ```
-compile"com.github.jaredcorso.Pandamation:library:1.1-SNAPSHOT"
+compile 'com.github.jaredcorso:Pandamation:1.2-SNAPSHOT'
 ```
 
 additionally the project requires apache's IO Utils so you will also need to add
