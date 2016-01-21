@@ -46,4 +46,4 @@ Pandamate.animateWithStopFrame(int resourceId, final ImageView imageView, final 
 - frameToStopOn : (2nd method only) the frame number you want the animation to stop on
 
 #Footnote
-special props to [Ryan Baumbach](https://github.com/rbaumbach for coming up with the name for this library
+special props to [Ryan Baumbach](https://github.com/rbaumbach) for coming up with the name for this library
