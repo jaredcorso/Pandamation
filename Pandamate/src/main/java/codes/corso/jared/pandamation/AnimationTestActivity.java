@@ -21,7 +21,7 @@ public class AnimationTestActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Pandamate.animateManuallyWithStopFrame(R.drawable.testanim, testImage, null, null,10);
+                Pandamate.animateWithStopFrame(R.drawable.testanim, testImage, null, null,10);
             }
         });
 

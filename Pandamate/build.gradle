@@ -1,0 +1,143 @@
+//apply plugin: 'com.android.application'
+//apply plugin: 'maven'
+//apply plugin: 'signing'
+//
+//android {
+//    compileSdkVersion 23
+//    buildToolsVersion "23.0.1"
+//
+//    defaultConfig {
+//        applicationId "codes.corso.jared.pandamation"
+//        minSdkVersion 16
+//        targetSdkVersion 23
+//        versionCode 1
+//        versionName "1.0"
+//    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+//}
+//
+//
+//dependencies {
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    testCompile 'junit:junit:4.12'
+//    compile 'com.android.support:appcompat-v7:23.1.1'
+//    compile 'com.jakewharton:butterknife:7.0.1'
+//    compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+//}
+
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+
+}
+
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+
+//signing {
+//    sign configurations.archives
+//}
+//
+//group = "com.github.jaredcorso"
+//archivesBaseName = "pandamation"
+//version = "1.0"
+//
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+//
+//            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+//                authentication(userName: ossrhUsername, password: ossrhPassword)
+//            }
+//
+//            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+//                authentication(userName: ossrhUsername, password: ossrhPassword)
+//            }
+//
+//            pom.project {
+//                name 'Pandamation'
+//                packaging 'aar'
+//                // optionally artifactId can be defined here
+//                description 'An android animation library'
+//                url 'http://www.github.com/jaredcorso/pandamation'
+//
+//                scm {
+//                    connection 'scm:svn:http://foo.googlecode.com/svn/trunk/'
+//                    developerConnection 'scm:svn:https://foo.googlecode.com/svn/trunk/'
+//                    url 'http://foo.googlecode.com/svn/trunk/'
+//                }
+//
+//                licenses {
+//                    license {
+//                        name 'The Apache License, Version 2.0'
+//                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                    }
+//                }
+//
+//                developers {
+//                    developer {
+//                        id 'jaredcorso'
+//                        name 'Jared Corso'
+//                        email 'jaredcorso95@gmail.com'
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
+
+
+//ext {
+//    bintrayRepo = 'maven'
+//    bintrayName = 'pandamation'
+//
+//    publishedGroupId = 'com.github.jaredcorso'
+//    libraryName = 'pandamation'
+//    artifact = 'pandamation'
+//
+//    libraryDescription = 'Memory concious android frame animations library '
+//
+//    siteUrl = 'https://github.com/jaredcorso/Pandamation'
+//    gitUrl = 'https://github.com/jaredcorso/Pandamation.git'
+//
+//    libraryVersion = '1.0'
+//
+//    developerId = 'jaredcorso'
+//    developerName = 'Jared Corso'
+//    developerEmail = 'jaredcorso95@gmail.com'
+//
+//    licenseName = 'The Apache Software License, Version 2.0'
+//    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//    allLicenses = ["Apache-2.0"]
+//}
+//
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

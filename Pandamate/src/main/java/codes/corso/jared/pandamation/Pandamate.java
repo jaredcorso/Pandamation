@@ -93,7 +93,7 @@ public class Pandamate {
         }).run();
     }
 
-    public static void animateManually(int resourceId, final ImageView imageView, final Runnable onStart, final Runnable onComplete) {
+    public static void animate(int resourceId, final ImageView imageView, final Runnable onStart, final Runnable onComplete) {
         frameToEnd = -1;
         loadRaw(resourceId, imageView.getContext(), new OnDrawableLoadedListener() {
             @Override
@@ -102,12 +102,12 @@ public class Pandamate {
                     onStart.run();
                 }
 
-                animateManually(myFrames, imageView, onComplete);
+                animate(myFrames, imageView, onComplete);
             }
         });
     }
 
-    public static void animateManuallyWithStopFrame(int resourceId, final ImageView imageView, final Runnable onStart, final Runnable onComplete, int frameToEndOn) {
+    public static void animateWithStopFrame(int resourceId, final ImageView imageView, final Runnable onStart, final Runnable onComplete, int frameToEndOn) {
       frameToEnd = frameToEndOn;
         loadRaw(resourceId, imageView.getContext(), new OnDrawableLoadedListener() {
             @Override
@@ -116,16 +116,16 @@ public class Pandamate {
                     onStart.run();
                 }
 
-                animateManually(myFrames, imageView, onComplete);
+                animate(myFrames, imageView, onComplete);
             }
         });
     }
 
-    public static void animateManually(List<MyFrame> myFrames, ImageView imageView, Runnable onComplete) {
-        animateManually(myFrames, imageView, onComplete, 0);
+    public static void animate(List<MyFrame> myFrames, ImageView imageView, Runnable onComplete) {
+        animate(myFrames, imageView, onComplete, 0);
     }
 
-    private static void animateManually(final List<MyFrame> myFrames, final ImageView imageView, final Runnable onComplete, final int frameNumber) {
+    private static void animate(final List<MyFrame> myFrames, final ImageView imageView, final Runnable onComplete, final int frameNumber) {
         if((frameNumber > frameToEnd) && (frameToEnd != -1)) {
             return;
         }
@@ -150,7 +150,7 @@ public class Pandamate {
                         MyFrame nextFrame = myFrames.get(frameNumber+1);
 
                         if (nextFrame.isReady) {
-                            animateManually(myFrames, imageView, onComplete, frameNumber + 1);
+                            animate(myFrames, imageView, onComplete, frameNumber + 1);
                         }
                         else {
                             nextFrame.isReady = true;
@@ -172,7 +172,7 @@ public class Pandamate {
                     MyFrame nextFrame = myFrames.get(frameNumber+1);
                     nextFrame.drawable = new BitmapDrawable(imageView.getContext().getResources(), BitmapFactory.decodeByteArray(nextFrame.bytes, 0, nextFrame.bytes.length));
                     if (nextFrame.isReady) {
-                        animateManually(myFrames, imageView, onComplete, frameNumber + 1);
+                        animate(myFrames, imageView, onComplete, frameNumber + 1);
                     }
                     else {
                         nextFrame.isReady = true;
