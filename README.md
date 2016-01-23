@@ -1,3 +1,5 @@
+![pandamation](https://github.com/berotburns/Pandamation/blob/master/pandamation.png?)
+
 # Pandamation
 
 Pandamation is an open source android framework for frame animation.  The built in android framework has a few issues that
