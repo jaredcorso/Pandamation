@@ -49,4 +49,4 @@ Pandamate.animateWithStopFrame(int resourceId, final ImageView imageView, final 
 
 #Footnote
 special props to [Ryan Baumbach](https://github.com/rbaumbach) for coming up with the name for this library
-extra special props to [Justin Berot-Burns(https://github.com/berobturns) for the Pandamation logo
+extra special props to [Justin Berot-Burns](https://github.com/berotburns) for the Pandamation logo
