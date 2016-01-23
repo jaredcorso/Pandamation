@@ -1,6 +1,6 @@
 ![pandamation](https://github.com/berotburns/Pandamation/blob/master/pandamation.png?)
 
-# Pandamation
+# About Pandamation
 
 Pandamation is an open source android framework for frame animation.  The built in android framework has a few issues that
 this library solves.  The first of these issues are the memory issues with android's.  When a frame animation is done with
@@ -49,3 +49,4 @@ Pandamate.animateWithStopFrame(int resourceId, final ImageView imageView, final 
 
 #Footnote
 special props to [Ryan Baumbach](https://github.com/rbaumbach) for coming up with the name for this library
+extra special props to [Justin Berot-Burns(https://github.com/berobturns) for the Pandamation logo
